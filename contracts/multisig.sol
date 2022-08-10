@@ -49,4 +49,9 @@ contract Multisig {
             payable(_beneficiary).transfer(Value);
         }
     }
+
+    receive() external payable{}
+
+    fallback()external payable{}
+
 }
