@@ -33,8 +33,9 @@ contract Multisig {
             if(msg.sender == validSigner[i]){
                 valid = msg.sender;
             }
-            require(msg.sender != address(0), "can not be address zero");
+            
         }
+        assert(valid != address(0));
         success = true;
     }
 
