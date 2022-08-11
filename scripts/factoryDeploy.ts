@@ -7,7 +7,7 @@ async function main() {
 
   // const lockedAmount = ethers.utils.parseEther("1");
 
-  const MultisigFactory = await ethers.getContractFactory("Lock");
+  const MultisigFactory = await ethers.getContractFactory("MultiSigFactory");
   const multisigFactory = await MultisigFactory.deploy();
 
   await multisigFactory.deployed();
@@ -18,6 +18,5 @@ async function main() {
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
 main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
+  "factory contract deployed to this address"
 });
