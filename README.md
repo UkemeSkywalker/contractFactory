@@ -1,13 +1,8 @@
-# Contract Factory Hardhat Project
+# Multi-signature Factory Contract Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates a basic Hardhat use case, we created a multisignature contract and a factory contract to clone the multisig.
 
 Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+npx hardhat run scripts/factoryDeploy.ts
 ```
